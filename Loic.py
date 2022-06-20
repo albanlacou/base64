@@ -15,8 +15,10 @@ def fill_to_octet(string):
     nombre_tours = 0
     for i in string:
         nombre_tours = nombre_tours + 1
+
     if nombre_tours % 8 != 0:
         while nombre_tours % 8 != 0:
             nombre_tours = nombre_tours + 1
             string = string + "="
     return string
+
