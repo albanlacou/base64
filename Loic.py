@@ -9,7 +9,7 @@ def fill_to_octet(string):
     for i in string :
         nombre_tours = nombre_tours + 1
         print(nombre_tours)
-    if nombre_tours < 8 :
+    if nombre_tours % 8 == 0:
         for i in string :
             string = string + "="
             print(string)
